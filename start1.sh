@@ -1,4 +1,5 @@
 
+#nmcli connection delete <uuid>
 
 cd 
 sleep 5
@@ -30,5 +31,5 @@ echo connection madesupposedly
 #screen -dmS MavproxyIvue ./mavIvue.sh
 export LOCALAPPDATA="LOCALAPPDATA"
 echo firster
-screen -dmS MavProxyIvue bash -c "mavproxy.py --out 10.8.0.2:6767 --out 10.147.19.214:6767 --out 10.147.19.242:6767 --out 10.147.19.17:6767"  
+screen -dmS MavProxyIvue bash -c "mavproxy.py --out udpin:10.10.10.10:8765"  
 echo laster
